@@ -35,7 +35,7 @@ async function getQuote(){
         // const data = await response.json();
         // console.log(data);
         loading();
-        const response = await fetch( apiUrl );
+        const response = await fetch( proxyUrl + apiUrl );
         const data = await response.json();
         if (data.author === ''){
             authorText.innerHTML = "Unknow"
