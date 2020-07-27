@@ -55,7 +55,7 @@ async function getQuote(){
         complete();
         
     }catch( error ) {
-        //getQuote();
+        getQuote();
         console.log('Oops no quote', error);
         
     }
@@ -75,6 +75,5 @@ newQuoteBtn.addEventListener('click', getQuote);
 twitterBtn.addEventListener('click', tweetQuote);
 
 // on load
+getQuote();
 
-// getQuote();
-// loading();
