@@ -104,7 +104,11 @@ button:active{
   100% { transform: rotate(360deg); }
 }
 
-
+.error-message{
+  font-size: 1.5rem;
+  color: red;
+  padding: 2rem;
+}
  /* Media query: tablet or smaller */
 
 @media screen and (max-width: 1000px){
